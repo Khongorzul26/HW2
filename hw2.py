@@ -18,3 +18,6 @@ df_json = df_male.to_json(orient = "split")
 #Task 2-1
 import numpy as np
 df.iloc[16, 2:6] #17 dahi mur = 16 dahi mur, 2-5 dahi baganad 2,3,4,5 gsen baganiin utguud orno gej tootsoolov. 
+
+#Task 2-2
+df.loc[24:27,("firstName", "age")] 
