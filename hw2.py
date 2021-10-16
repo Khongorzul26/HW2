@@ -28,3 +28,4 @@ df.groupby(['gender']).agg({'age': ["min", "mean","max"], 'salary': ["min", "mea
 #Task 2-4
 table = df.pivot_table(index = ['gender'],aggfunc = {'salary' : [min, max, np.mean], 'age': [min, max, np.mean]})
 table
+
