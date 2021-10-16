@@ -21,3 +21,6 @@ df.iloc[16, 2:6] #17 dahi mur = 16 dahi mur, 2-5 dahi baganad 2,3,4,5 gsen bagan
 
 #Task 2-2
 df.loc[24:27,("firstName", "age")] 
+
+#Task 2-3
+df.groupby(['gender']).agg({'age': ["min", "mean","max"], 'salary': ["min", "mean", "max"]})
